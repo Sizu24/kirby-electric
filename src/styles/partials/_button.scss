@@ -1,0 +1,50 @@
+.button-primary {
+  padding: rem(20px 32px);
+  border-radius: rem(10px);
+  font-size: rem(16px);
+  font-weight: $fw-med;
+  color: $light;
+  background-color: $primary;
+  border: none;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background-color: $light;
+    color: $primary;
+  };
+}
+
+.button-light {
+  padding: rem(14px 32px);
+  border-radius: rem(10px);
+  font-size: rem(16px);
+  font-weight: $fw-med;
+  background-color: $light;
+  color: $primary;
+  border: none;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background-color: $primary;
+    color: $light;
+  };
+}
+
+.button-secondary {
+  padding: rem(20px 32px);
+  border-radius: rem(10px);
+  font-size: rem(16px);
+  font-weight: $fw-med;
+  background-color: $secondary;
+  color: $primary;
+  border: none;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background-color: $primary;
+    color: $light;
+  };
+}

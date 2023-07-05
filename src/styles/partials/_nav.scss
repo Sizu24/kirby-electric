@@ -1,0 +1,21 @@
+.nav {
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-list__item {
+  padding: rem(15px 20px);
+}
+
+.nav-list__item-link {
+  font-family: $poppins;
+  font-size: rem(16px);
+  font-weight: $fw-med;
+  color: $primary;
+  text-decoration: none;
+}
