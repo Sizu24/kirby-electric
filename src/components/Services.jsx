@@ -1,24 +1,18 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import Cards from "./Cards";
+import Button from "./Button";
 
 function Services() {
 
   return (
-    <div className="services">
-      <h2 className="section__title">Our comprehensive Electrical Services</h2>
-      <p className="section__subhead">Meeting All Your Electrical Needs with Expertise and Precision</p>
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      </Swiper>
-
+    <div className="services plug">
+      <div className="section-container">
+        <h2 className="section__title">Our comprehensive Electrical Services</h2>
+        <p className="section__subhead">Meeting All Your Electrical Needs with Expertise and Precision</p>  
+        <div className="section__slider">
+          <Cards />
+        </div>
+        <Button className={"primary button--center"} clickHandler={() => {}} text={"See All Services"} />
+      </div>
     </div>
   );
 }

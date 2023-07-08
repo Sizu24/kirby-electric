@@ -28,7 +28,7 @@ function Nav() {
           </li>
           <li className="nav-list__item">
             <Link to="/contact" className="nav-list__item-link">
-              <Button className={'light'} onClick={() => {}} text={'Contact Us'}/>
+              <Button className={'light'} clickHandler={() => {}} text={'Contact Us'}/>
             </Link>
           </li>
         </ul>

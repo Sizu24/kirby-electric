@@ -1,6 +1,8 @@
-function Button({className, onClick, text}) {
+import React from "react";
+
+function Button({className, clickHandler, text}) {
   return (
-    <button className={`button-${className}`} onClick={onClick}>
+    <button className={`button-${className}`} onClick={clickHandler}>
       {text}
     </button>
   );

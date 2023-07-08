@@ -1,0 +1,32 @@
+.button--center {
+  align-self: center;
+}
+
+.plug {
+  &:before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -200px;
+    width: 390px;
+    height: 340.492px;
+    background: url('../src/assets/accents/plug.svg');
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+  }
+}
+
+.curve-blue {
+  &:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 5384px;
+    height: 4815.076px;
+    background: url('../src/assets/accents/curve-blue.svg');
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+  }
+}
