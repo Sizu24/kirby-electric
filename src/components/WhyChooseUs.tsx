@@ -8,7 +8,7 @@ const url = (name: string, wrap = false) =>
 export default function WhyChooseUs() {
   const parallax = useRef<IParallax>(null!)
   return (
-    <div style={{ width: '100%', height: '100%', background: '#FFFFFF' }}>
+    <div style={{ padding: '100px 0', width: '100%', height: '100%', background: '#FFFFFF' }}>
 
       <Parallax ref={parallax} pages={3}>
         <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#805E73' }} />
@@ -22,12 +22,11 @@ export default function WhyChooseUs() {
         </div>
         </ParallaxLayer>
 
-
         <ParallaxLayer
           offset={0.2}
           speed={0.1}
           sticky={{start: 0.1, end: 1}}
-          onScroll={() => parallax.current.scrollTo(1)}
+          onClick={() => parallax.current.scrollTo(1)}
           style={{
             display: 'flex',
             flexDirection: 'column',
@@ -111,7 +110,7 @@ export default function WhyChooseUs() {
         <ParallaxLayer
           offset={1}
           speed={0.1}
-          onScroll={() => parallax.current.scrollTo(2)}
+          onClick={() => parallax.current.scrollTo(2)}
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -128,7 +127,7 @@ export default function WhyChooseUs() {
             alignItems: 'center',
             justifyContent: 'center',
           }}
-          onScroll={() => parallax.current.scrollTo(0)}>
+          onClick={() => parallax.current.scrollTo(0)}>
           <img src={url('clients-main')} style={{ width: '40%' }} />
         </ParallaxLayer>
       </Parallax>
