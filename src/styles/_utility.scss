@@ -8,9 +8,80 @@
     position: absolute;
     right: 0;
     bottom: -200px;
-    width: 390px;
-    height: 340.492px;
+    width: rem(390px);
+    height: rem(465.492px);
     background: url('../src/assets/accents/plug.svg');
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+  }
+}
+
+.plug-left {
+  &:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: rem(542px);
+    height: rem(520px);
+    background: url('../src/assets/accents/plug2.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.wires {
+  &:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -85px;
+    width: rem(1080px);
+    height: rem(178px);
+    background: url('../src/assets/accents/wires.svg');
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+  }
+}
+
+.wires-yellow {
+  &:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -85px;
+    width: rem(1080px);
+    height: rem(178px);
+    background: url('../src/assets/accents/wires-yellow.svg');
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+  }
+}
+
+.red-wire {
+  &:after{
+    content: "";
+    position: absolute;
+    left: 100px;
+    bottom: -110px;
+    width: rem(60px);
+    height: rem(189px);
+    background: url('../src/assets/accents/red-wire.svg');
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+  }
+}
+
+.yellow-wire {
+  &:after{
+    content: "";
+    position: absolute;
+    right: 100px;
+    bottom: -110px;
+    width: rem(60px);
+    height: rem(189px);
+    background: url('../src/assets/accents/yellow-wire.svg');
     background-repeat: no-repeat;
     flex-shrink: 0;
   }
@@ -22,10 +93,26 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
-    width: 5384px;
-    height: 4815.076px;
+    top: -570px;
+    width: rem(5384px);
+    height: rem(4815.076px);
     background: url('../src/assets/accents/curve-blue.svg');
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    z-index: -1;
+  }
+}
+
+.footer-curves {
+  &:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -268px;
+    width: rem(3549px);
+    height: rem(485.381px);
+    background: url('../src/assets/accents/footer-curves.svg');
     background-repeat: no-repeat;
     flex-shrink: 0;
   }

@@ -1,0 +1,40 @@
+.text-media {
+  position: relative;
+  display: flex;
+  gap: rem(50px);
+  padding: rem(80px 0);
+}
+
+.text-media--flipped {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.text-media__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-media__title {
+  font-family: Inter;
+  font-size: rem(36px);
+  font-weight: $fw-med;
+  text-align: left;
+  color: $primary;
+}
+
+.text-media__body {
+  font-family: Inter;
+  font-size: rem(18px);
+  font-weight: $fw-light;
+  text-align: left;
+  color: $primary;
+}
+
+.text-media__media {
+
+}
+
+.text-media__image {
+
+}

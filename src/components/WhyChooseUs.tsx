@@ -1,136 +1,54 @@
-import React, { useRef } from 'react'
-import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
-
-// Little helpers ...
-const url = (name: string, wrap = false) =>
-  `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
+import React from 'react';
+import TextMedia from './TextMedia';
 
 export default function WhyChooseUs() {
-  const parallax = useRef<IParallax>(null!)
+
+  const contentOne = {
+    image: "../src/assets/images/worker.png",
+    title: "Experience and Expertise",
+    body: ["With a wealth of experience in the electrical industry, our team brings extensive knowledge and expertise to every project.",
+    "We have successfully handled a wide range of electrical jobs, from residential to commercial, ensuring that our customers receive top-notch service and solutions tailored to their specific needs."],
+  }
+
+  const contentTwo = {
+    image: "../src/assets/images/licensed.png",
+    title: "Licensed and Certified Electricians",
+    body: ["Our team comprises licensed and certified electricians who have undergone rigorous training and possess the necessary qualifications to handle electrical tasks with precision and professionalism.",
+    "You can trust that our experts are up-to-date with the latest industry standards and regulations, ensuring the highest level of quality and safety in all our services."],
+  }
+
+  const contentThree = {
+    image: "../src/assets/images/safety.png",
+    title: "Commitment to Safety",
+    body: ["Safety is our utmost priority in every project we undertake. We follow strict safety protocols and adhere to industry best practices to ensure the well-being of our clients, our team, and the surrounding environment.",
+    "You can have peace of mind knowing that we prioritize safety in every aspect of our work."],
+  }
+
+  const contentFour = {
+    image: "../src/assets/images/pricing.png",
+    title: "Competitive Pricing",
+    body: ["We believe that quality electrical services should be accessible and affordable. That's why we offer competitive pricing without compromising on the excellence of our work.",
+    " We provide transparent and detailed quotes, so you know exactly what to expect and can make informed decisions about your electrical needs."],
+  }
+
+  const contentFive = {
+    image: "../src/assets/images/satisfaction.png",
+    title: "Customer Satisfaction",
+    body: ["Your satisfaction is at the heart of our business. We are dedicated to providing exceptional customer service and ensuring that every customer's unique requirements are met.",
+    "From the initial consultation to the completion of the project, we strive to exceed your expectations and ensure a seamless and enjoyable experience."],
+  }
+
   return (
-    <div style={{ padding: '100px 0', width: '100%', height: '100%', background: '#FFFFFF' }}>
-
-      <Parallax ref={parallax} pages={3}>
-        <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#805E73' }} />
-        <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} />
-
-
-        <ParallaxLayer offset={0} speed={.5} style={{ pointerEvents: 'none' }}>
-        <div className="section-container">
-          <h2 className="section__title">Why Choose Us?</h2>
-          <p className="section__subhead">Meeting All Your Electrical Needs with Expertise and Precision</p>  
-        </div>
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          offset={0.2}
-          speed={0.1}
-          sticky={{start: 0.1, end: 1}}
-          onClick={() => parallax.current.scrollTo(1)}
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
-          <div className="section-content">
-          <h3 className="section-content__title">Experience and Expertise</h3>
-          <p className="section-content__body">
-            With a wealth of experience in the electrical industry,
-            our team brings extensive knowledge and expertise to every project.
-          </p>
-          <p className="section-content__body">
-            We have successfully handled a wide range of electrical jobs, from residential to commercial,
-            ensuring that our customers receive top-notch service and solutions tailored to their specific needs.
-          </p>
-          </div>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
-          <img src={url('satellite4')} style={{ width: '15%', marginLeft: '70%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer 
-          offset={-0.5}
-          speed={0.1}
-          sticky={{start: 0.1, end: 1}}
-          style={{ pointerEvents: 'none' }}>
-          <img src='../src/assets/images/worker.png' style={{ width: '15%', marginLeft: '70%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '70%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '40%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.2 }}>
-          <img src={url('cloud')} style={{ display: 'block', width: '10%', marginLeft: '10%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '75%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '60%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '25%', marginLeft: '30%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '10%', marginLeft: '80%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={2.6} speed={0.4} style={{ opacity: 0.6 }}>
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '5%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '15%', marginLeft: '75%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          offset={2.5}
-          speed={-0.4}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            pointerEvents: 'none',
-          }}>
-          <img src={url('earth')} style={{ width: '60%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          offset={2}
-          speed={-0.3}
-          style={{
-            backgroundSize: '80%',
-            backgroundPosition: 'center',
-            backgroundImage: url('clients', true),
-          }}
-        />
-
-
-        <ParallaxLayer
-          offset={1}
-          speed={0.1}
-          onClick={() => parallax.current.scrollTo(2)}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
-          <img src={url('bash')} style={{ width: '40%' }} />
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          offset={2}
-          speed={-0}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-          onClick={() => parallax.current.scrollTo(0)}>
-          <img src={url('clients-main')} style={{ width: '40%' }} />
-        </ParallaxLayer>
-      </Parallax>
+    <div className="why-choose-us curve-blue plug-left">
+      <div className="section-container">
+        <h2 className="section__title">Why Choose Us?</h2>
+        <p className="section__subhead">Meeting All Your Electrical Needs with Expertise and Precision</p>
+        <TextMedia accent={"wires"} flipped={false} image={contentOne.image} title={contentOne.title} paragraphs={contentOne.body} />
+        <TextMedia accent={"red-wire"} flipped={true} image={contentTwo.image} title={contentTwo.title} paragraphs={contentTwo.body} />
+        <TextMedia accent={"yellow-wire"} flipped={false} image={contentThree.image} title={contentThree.title} paragraphs={contentThree.body} />
+        <TextMedia accent={"wires-yellow"} flipped={true} image={contentFour.image} title={contentFour.title} paragraphs={contentFour.body} />
+        <TextMedia accent={""} flipped={false} image={contentFive.image} title={contentFive.title} paragraphs={contentFive.body} />
+      </div>
     </div>
   )
 }

@@ -3,6 +3,7 @@ import Footer from "../layout/Footer";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import WhyChooseUs from "../components/WhyChooseUs";
+import Gallery from "../components/Gallery";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
         <Hero />
         <Services />
         <WhyChooseUs />
+        <Gallery />
       </main>
       <Footer />
     </>

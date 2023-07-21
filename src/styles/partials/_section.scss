@@ -15,6 +15,7 @@
 }
 
 .section__subhead {
+  margin: rem(5px 0);
   font-family: Inter;
   font-size: rem(24px);
   font-weight: $fw-reg;
@@ -23,6 +24,10 @@
 }
 
 .section-content {
+
+}
+
+.section-content--half {
   width: 50%;
 }
 

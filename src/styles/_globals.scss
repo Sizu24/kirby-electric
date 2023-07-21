@@ -9,3 +9,12 @@ body {
 .main {
   position: relative;
 }
+
+.container {
+  margin: rem(0 20px);
+  
+  @include size($lg) {
+    max-width: rem(1440px);
+    margin: 0 auto;
+  }
+}
