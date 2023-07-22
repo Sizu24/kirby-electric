@@ -6,13 +6,20 @@
   &:before{
     content: "";
     position: absolute;
-    right: 0;
-    bottom: -200px;
+    right: -70px;
+    bottom: -350px;
     width: rem(390px);
     height: rem(465.492px);
     background: url('../src/assets/accents/plug.svg');
     background-repeat: no-repeat;
     flex-shrink: 0;
+  }
+
+  @include size($lg) {
+    &::before {
+      right: 0;
+      bottom: -200px;
+    }
   }
 }
 

@@ -1,11 +1,15 @@
 .header {
   position: fixed;
   display: flex;
-  padding: rem(0 100px);
+  padding: rem(0 20px);
   width: 100vw;
   justify-content: space-between;
   background-color: transparent;
   z-index: 10;
+
+  @include size($lg) {
+    padding: rem(0 200px);
+  }
 
   @include size($xxl) {
     padding: rem(0 200px);
@@ -13,6 +17,10 @@
 }
 
 .header__logo {
-  width: rem(78px);
+  width: rem(40px);
   height: auto;
+
+  @include size($md) {
+    width: rem(78px);
+  }
 }

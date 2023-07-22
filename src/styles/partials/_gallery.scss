@@ -1,7 +1,12 @@
 .gallery {
-  margin: rem(50px 10px);
+  margin: rem(50px 0);
+  padding: rem(100px 0);
   text-align: center;
   background-color: $light-blue;
+
+  @include size($lg) {
+    margin: rem(50px 10px);
+  }
 }
 
 .gallery-container {
