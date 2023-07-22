@@ -41,7 +41,7 @@ function Gallery () {
           <h3 className="gallery__image-title">Deck & Patio</h3>
         </div>
       </div>
-      <a className="gallery__link" href="">See All of Our Work</a>
+      <a className="gallery__link button" href="">See All of Our Work</a>
     </div>
   );
 }
