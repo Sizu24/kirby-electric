@@ -2,6 +2,9 @@
   position: relative;
   background: linear-gradient(90deg, rgba($primary, 0.75), rgba($primary, 1));
 
+  @include size($lg) {
+    margin-top: rem(240px);
+  }
 }
 
 .footer-content {
@@ -24,8 +27,11 @@
 
 .footer-socials {
   display: flex;
-  justify-content: center;
   align-items: center;
+
+  @include size($lg) {
+    justify-content: center;
+  }
 }
 
 .footer-socials__logo {
@@ -35,6 +41,7 @@
 }
 
 .footer__list {
+  padding: rem(0 20px);
   margin-top: rem(50px);
   list-style: none;
 }
@@ -60,5 +67,9 @@
   font-family: $inter;
   font-size: rem(16px);
   font-weight: $fw-reg;
-  padding: rem(50px 200px);
+  padding: rem(50px 20px);
+
+  @include size($lg) {
+    padding: rem(50px 200px);
+  }
 }

@@ -93,10 +93,11 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: -570px;
-    width: rem(5384px);
-    height: rem(4815.076px);
+    top: -200px;
+    width: 100vw;
+    height: rem(5103px);
     background: url('../src/assets/accents/curve-blue.svg');
+    background-size: cover;
     background-repeat: no-repeat;
     flex-shrink: 0;
     z-index: -1;
@@ -109,11 +110,12 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: -268px;
-    width: rem(3549px);
-    height: rem(485.381px);
+    top: -510px;
+    width: 100vw;
+    height: rem(901px);
     background: url('../src/assets/accents/footer-curves.svg');
     background-repeat: no-repeat;
+    background-size: cover;
     flex-shrink: 0;
   }
 }

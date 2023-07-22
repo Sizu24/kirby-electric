@@ -1,4 +1,9 @@
 .nav {
+  display: none;
+
+  @include size($lg) {
+    display: block;
+  }
 }
 
 .nav-list {

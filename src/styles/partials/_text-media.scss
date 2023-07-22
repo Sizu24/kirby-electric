@@ -1,13 +1,21 @@
 .text-media {
-  position: relative;
   display: flex;
+  flex-direction: column;
+  position: relative;
   gap: rem(50px);
+  margin: rem(0 20px);
   padding: rem(80px 0);
+
+  @include size($lg) {
+    flex-direction: row;
+  }
 }
 
 .text-media--flipped {
-  display: flex;
-  flex-direction: row-reverse;
+  @include size($lg) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .text-media__text {

@@ -12,16 +12,6 @@
     width: 100%;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
   }
-
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 2586.691px;
-    height: 211.579px;
-    flex-shrink: 0;
-    background: url('../assets/accents/hero-curves.svg');
-  }
 }
 
 .hero__background {
@@ -35,15 +25,27 @@
   position: absolute;
   top: 15%;
   left: 0;
-  padding-left: rem(50px);
-  max-width: 65%;
+  padding: rem(20px);
+
+  @include size($lg) {
+    max-width: 65%;
+    padding-left: rem(210px);
+  }
 }
 
 .hero__title {
   font-family: $inter;
   font-weight: $fw-black;
-  font-size: rem(72px);
+  font-size: rem(36px);
   color: $primary;
+
+  @include size($lg) {
+    font-size: rem(72px);
+  }
+
+  @include size($xl) {
+    font-size: rem(104px);
+  }
 }
 
 .hero__subhead {
@@ -51,4 +53,14 @@
   font-weight: $fw-med;
   font-size: rem(24px);
   color: $primary;
+
+  @include size($lg) {
+    font-size: rem(36px);
+  }
+}
+
+.hero__cta {
+  @include size($lg) {
+    font-size: rem(24px);
+  }
 }

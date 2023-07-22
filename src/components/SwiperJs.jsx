@@ -12,7 +12,15 @@ function SwiperJs({slides}) {
     <Swiper
       modules={[Navigation, Pagination]}
       spaceBetween={50}
-      slidesPerView={3}
+      slidesPerView={1}
+      breakpoints={{
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        }
+      }}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
       navigation

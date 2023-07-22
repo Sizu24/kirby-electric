@@ -4,6 +4,7 @@
 
 body {
   margin: 1px;
+  overflow-x: hidden;
 }
 
 .main {
@@ -17,4 +18,8 @@ body {
     max-width: rem(1440px);
     margin: 0 auto;
   }
+}
+
+.button {
+  z-index: 1;
 }
