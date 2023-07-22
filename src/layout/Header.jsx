@@ -1,6 +1,6 @@
 import Nav from "./Nav";
 
-function Header() {
+function Header(colorMode) {
   return (
     <>
       <header className="header">
@@ -9,7 +9,7 @@ function Header() {
           alt=""
           className="header__logo"
         />
-        <Nav />
+        <Nav color={colorMode}/>
       </header>
     </>
   );

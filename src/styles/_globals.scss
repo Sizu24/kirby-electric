@@ -14,7 +14,7 @@ body {
 .container {
   margin: rem(0 20px);
   
-  @include size($lg) {
+  @include size($md) {
     max-width: rem(1440px);
     margin: 0 auto;
   }
