@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Gallery () {
 
@@ -41,7 +42,7 @@ function Gallery () {
           <h3 className="gallery__image-title">Deck & Patio</h3>
         </div>
       </div>
-      <a className="gallery__link button" href="">See All of Our Work</a>
+      <Link className="gallery__link button" to={"/gallery"}>See All of Our Work</Link>
     </div>
   );
 }

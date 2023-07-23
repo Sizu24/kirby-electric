@@ -1,3 +1,4 @@
+import React from "react";
 import SwiperJs from "./SwiperJs";
 import Card from "./Card";
 

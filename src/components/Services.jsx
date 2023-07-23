@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 import Cards from "./Cards";
 import Button from "./Button";
 
@@ -74,7 +77,7 @@ function Services() {
         <div className="section__slider">
           <Cards cardList={cards} />
         </div>
-        <Button className={"primary button--center"} clickHandler={() => {}} text={"See All Services"} />
+        <Link className={"button-primary button--center"} to={"/services"}>See All Services</Link>
       </div>
     </div>
   );

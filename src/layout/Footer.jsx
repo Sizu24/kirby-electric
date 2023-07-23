@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -8,18 +9,19 @@ function Footer() {
           <div className="footer-column">
             <img className="footer__logo" src="../src/assets/images/footer-logo.svg" alt="" />
             <div className="footer-socials">
-              <img className="footer-socials__logo" src="../src/assets/images/fb-logo.svg" alt="" />
-              <img className="footer-socials__logo" src="../src/assets/images/ig-logo.svg" alt="" />
-              <img className="footer-socials__logo" src="../src/assets/images/twitter-logo.svg" alt="" />
+              <Link to={"/"}><img className="footer-socials__logo" src="../src/assets/images/fb-logo.svg" alt="" /></Link>
+              <Link to={"/"}><img className="footer-socials__logo" src="../src/assets/images/ig-logo.svg" alt="" /></Link>
+              <Link to={"/"}><img className="footer-socials__logo" src="../src/assets/images/twitter-logo.svg" alt="" /></Link>
             </div>
           </div>
           <div className="footer-column">
             <ul className="footer__list">
               <li className="footer__list-title">Links</li>
-              <li className="footer__list-item">Home</li>
-              <li className="footer__list-item">Services</li>
-              <li className="footer__list-item">Gallery</li>
-              <li className="footer__list-item">About Us</li>
+              <li className="footer__list-item"><Link to={"/"}>Home</Link></li>
+              <li className="footer__list-item"><Link to={"/services"}>Services</Link></li>
+              <li className="footer__list-item"><Link to={"/gallery"}>Gallery</Link></li>
+              <li className="footer__list-item"><Link to={"/about"}>About Us</Link></li>
+              <li className="footer__list-item"><Link to={"/contact"}>Contact</Link></li>
             </ul>
           </div>
           <div className="footer-column">

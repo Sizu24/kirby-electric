@@ -28,7 +28,6 @@ function TextMedia({ accent, flipped, image, title, paragraphs }) {
       <div className="text-media__media">
         <img className="text-media__image" src={image} alt="" />
       </div>
-      
     </div>
   );
 

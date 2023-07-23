@@ -1,6 +1,8 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Grid, Navigation, Pagination} from 'swiper/modules';
+import { register } from 'swiper/element/bundle';
+register();
 
 // Import Swiper styles
 import 'swiper/css';
@@ -11,30 +13,21 @@ import 'swiper/css/scrollbar';
 
 function SwiperJs({slides}) {
   return (
-    <Swiper
-      modules={[Grid, Navigation, Pagination]}
-      slidesPerView={1}
-      grid={{
-        rows: 2,
-        fill: "row",
-      }}
-      spaceBetween={20}
-      breakpoints={{
-        768: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 3,
-        }
-      }}
-      navigation
-      pagination={{ clickable: true }}
-      // onSlideChange={() => console.log('slide change')}
-      // onSwiper={(swiper) => console.log(swiper)}
+    <>
+    <swiper-container
+      grid-rows="2"
+      grid-fill="row"
+      slides-per-columm="2"
+      slides-per-view="3"
+      space-between="20"
+      autoplay="true"
+      data-swiper-autoplay="2000"
+      navigation="true"
     >
       {
-      slides && slides.map((slide, index) => (<SwiperSlide key={index}>{slide}</SwiperSlide>))}
-    </Swiper>
+      slides && slides.map((slide, index) => (<swiper-slide key={index}>{slide}</swiper-slide>))}
+    </swiper-container>
+  </>
   );
 };
 

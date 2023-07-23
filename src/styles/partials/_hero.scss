@@ -27,12 +27,17 @@
   left: 0;
   padding: rem(20px);
 
-  @include size($lg) {
+  @include size($md) {
+    max-width: 65%;
+    padding-left: rem(50px);
+  }
+
+  @include size($xl) {
     max-width: 65%;
     padding-left: rem(100px);
   }
 
-  @include size($xl) {
+  @include size($xxl) {
     max-width: 65%;
     padding-left: rem(210px);
   }
@@ -45,11 +50,11 @@
   color: $primary;
 
   @include size($lg) {
-    font-size: rem(60px);
+    font-size: rem(48px);
   }
 
   @include size($xl) {
-    font-size: rem(72px);
+    font-size: rem(60px);
   }
 
   @include size($xxl) {
@@ -63,13 +68,13 @@
   font-size: rem(24px);
   color: $primary;
 
-  @include size($xl) {
+  @include size($xxl) {
     font-size: rem(36px);
   }
 }
 
 .hero__cta {
-  @include size($xl) {
+  @include size($xxl) {
     font-size: rem(24px);
   }
 }
