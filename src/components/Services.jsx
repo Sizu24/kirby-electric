@@ -8,61 +8,61 @@ function Services() {
 
   const cards = [
     {
-      url: '/assets/images/AdobeStock_599068852_Preview 1.jpg',
+      url: '/kirby-electric/assets/images/AdobeStock_599068852_Preview 1.jpg',
       alt: 'Image of house and car outside',
       title: 'Residential',
       body: 'Lighting, Electrical, Ceiling, Electrical Panels, Smoke and Carbon Monoxide detectors.'
     },
     {
-      url: '/assets/images/AdobeStock_439136266_Preview 1.jpg',
+      url: '/kirby-electric/assets/images/AdobeStock_439136266_Preview 1.jpg',
       alt: 'Image of house and car outside',
       title: 'Commercial',
       body: 'Lighting, Electrical, Ceiling, Electrical Panels, Smoke and Carbon Monoxide detectors.'
     },
     {
-      url: '/assets/images/AdobeStock_120137915_Preview 1.jpg',
+      url: '/kirby-electric/assets/images/AdobeStock_120137915_Preview 1.jpg',
       alt: 'Image of house and car outside',
       title: 'Industrial',
       body: 'Lighting, Electrical, Ceiling, Electrical Panels, Smoke and Carbon Monoxide detectors.'
     },
     {
-      url: '/assets/images/AdobeStock_599068852_Preview 1.jpg',
+      url: '/kirby-electric/assets/images/AdobeStock_599068852_Preview 1.jpg',
       alt: 'Image of house and car outside',
       title: 'Lighting',
       body: 'Lighting, Electrical, Ceiling, Electrical Panels, Smoke and Carbon Monoxide detectors.'
     },
     {
-      url: '/assets/images/AdobeStock_439136266_Preview.jpg',
+      url: '/kirby-electric/assets/images/AdobeStock_439136266_Preview.jpg',
       alt: 'Image of house and car outside',
       title: 'Emergency',
       body: 'Lighting, Electrical, Ceiling, Electrical Panels, Smoke and Carbon Monoxide detectors.'
     },
     {
-      url: '/assets/images/AdobeStock_120137915_Preview.jpg',
+      url: '/kirby-electric/assets/images/AdobeStock_120137915_Preview.jpg',
       alt: 'Image of house and car outside',
       title: 'Network',
       body: 'Lighting, Electrical, Ceiling, Electrical Panels, Smoke and Carbon Monoxide detectors.'
     },
     {
-      url: '/assets/images/AdobeStock_599068852_Preview 1.jpg',
+      url: '/kirby-electric/assets/images/AdobeStock_599068852_Preview 1.jpg',
       alt: 'Image of house and car outside',
       title: 'Lighting',
       body: 'Lighting, Electrical, Ceiling, Electrical Panels, Smoke and Carbon Monoxide detectors.'
     },
     {
-      url: '/assets/images/AdobeStock_439136266_Preview.jpg',
+      url: '/kirby-electric/assets/images/AdobeStock_439136266_Preview.jpg',
       alt: 'Image of house and car outside',
       title: 'Emergency',
       body: 'Lighting, Electrical, Ceiling, Electrical Panels, Smoke and Carbon Monoxide detectors.'
     },
     {
-      url: '/assets/images/AdobeStock_120137915_Preview.jpg',
+      url: '/kirby-electric/assets/images/AdobeStock_120137915_Preview.jpg',
       alt: 'Image of house and car outside',
       title: 'Network',
       body: 'Lighting, Electrical, Ceiling, Electrical Panels, Smoke and Carbon Monoxide detectors.'
     },
     {
-      url: '/assets/images/AdobeStock_120137915_Preview.jpg',
+      url: '/kirby-electric/assets/images/AdobeStock_120137915_Preview.jpg',
       alt: 'Image of house and car outside',
       title: 'Network',
       body: 'Lighting, Electrical, Ceiling, Electrical Panels, Smoke and Carbon Monoxide detectors.'
