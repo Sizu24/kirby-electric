@@ -6,7 +6,7 @@ function Hero() {
 
   return (
     <div className="hero">
-      <img className="hero__background" src="../src/assets/images/hero-background.jpg" alt="" />
+      <img className="hero__background" src="/assets/images/hero-background.jpg" alt="" />
       <div className="hero-content">
         <h1 className="hero__title">Power up your space with Kirby Electric </h1>
         <p className="hero__subhead">Efficient and Safe Electrical Solutions for Every Setting</p>

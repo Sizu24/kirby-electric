@@ -9,7 +9,7 @@ function Services() {
     <>
       <Header colorMode={"dark"}/>
       <div className="subpage">
-        <SubpageHero title={"Contact Us"} subhead={"Subhead"} image={"../src/assets/images/AdobeStock_222475670_Preview.jpeg"} />
+        <SubpageHero title={"Contact Us"} subhead={"Subhead"} image={"/assets/images/AdobeStock_222475670_Preview.jpeg"} />
         <div className={"subpage-container container"}>
           <h2 className="subpage__title">Have any questions, or want to book an appointment?</h2>
           <p className="subpage__subhead">Send us a message, and we will get back to you as soon as possible!</p>
