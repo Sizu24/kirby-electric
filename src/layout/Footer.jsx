@@ -7,11 +7,11 @@ function Footer() {
       <div className="footer-container container">
         <div className="footer-content">
           <div className="footer-column">
-            <img className="footer__logo" src="/assets/images/footer-logo.svg" alt="" />
+            <img className="footer__logo" src="kirby-electric/assets/images/footer-logo.svg" alt="" />
             <div className="footer-socials">
-              <Link to={"/"}><img className="footer-socials__logo" src="/assets/images/fb-logo.svg" alt="" /></Link>
-              <Link to={"/"}><img className="footer-socials__logo" src="/assets/images/ig-logo.svg" alt="" /></Link>
-              <Link to={"/"}><img className="footer-socials__logo" src="/assets/images/twitter-logo.svg" alt="" /></Link>
+              <Link to={"/"}><img className="footer-socials__logo" src="kirby-electric/assets/images/fb-logo.svg" alt="" /></Link>
+              <Link to={"/"}><img className="footer-socials__logo" src="kirby-electric/assets/images/ig-logo.svg" alt="" /></Link>
+              <Link to={"/"}><img className="footer-socials__logo" src="kirby-electric/assets/images/twitter-logo.svg" alt="" /></Link>
             </div>
           </div>
           <div className="footer-column">
