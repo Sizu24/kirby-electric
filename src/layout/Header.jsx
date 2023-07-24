@@ -15,7 +15,7 @@ function Header(colorMode) {
     <>
       <header className="header">
         <img
-          src="kirby-electric/assets/images/main-logo.png"
+          src="/kirby-electric/assets/images/main-logo.png"
           alt="Kirby Electric logo"
           className="header__logo"
         />
